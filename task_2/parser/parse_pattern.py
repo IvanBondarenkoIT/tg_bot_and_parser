@@ -27,4 +27,3 @@ def get_book_settings(path: str) -> BookParsePattern:
 
 
 book_xpath = get_book_settings(characteristics_file)
-
