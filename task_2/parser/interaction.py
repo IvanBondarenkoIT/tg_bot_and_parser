@@ -72,13 +72,3 @@ class BookScraper:
                         for book_characteristic, book_value in book.items()
                     ]
                 )
-
-
-if __name__ == "__main__":
-    scraper = BookScraper(
-        # "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
-        "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
-    )
-    scraper.scrape_books()
-    scraper.close_driver()
-    scraper.save_to_csv("books.csv")

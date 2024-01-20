@@ -27,8 +27,5 @@ async def get_text(message: Message, bot: Bot):
             await message.answer('Here a result of parsing in "books.csv" file')
             book_file = FSInputFile(result_csv)
             await bot.send_document(message.chat.id, document=book_file)
-
-            # cat = FSInputFile("cat.png")
-            # await message.answer_document(document=result_csv)
         except Exception as err:
             print(f"Get error: {err}")

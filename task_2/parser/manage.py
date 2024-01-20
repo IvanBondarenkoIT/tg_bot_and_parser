@@ -16,7 +16,3 @@ def get_csv(link: str):
     scraper.close_driver()
     scraper.save_to_csv(RESULT_CSV_FILE_PATH)
     return RESULT_CSV_FILE_PATH
-
-
-if __name__ == "__main__":
-    get_csv("https://books.toscrape.com/catalogue/category/books/travel_2/index.html")
